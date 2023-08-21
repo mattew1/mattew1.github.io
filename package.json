@@ -1,0 +1,18 @@
+{
+  "name": "vitepress_github_pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.0.0",
+    "vitepress": "^1.0.0-rc.4",
+    "vue": "^3.3.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    
+    "deploy":"gh-pages -d build -r git@github.com:mattew1/mattew1.github.io.git -b main"
+  }
+}
